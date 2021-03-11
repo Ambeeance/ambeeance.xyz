@@ -1,0 +1,25 @@
+:root {
+    --amb-blue: rgb(162, 205, 255);
+    --amb-blue-mid: #6FB2FF;
+    --amb-blue-dark: #3C97FF;
+    --amb-gray: #f1f1f1;
+    --amb-gray-dark: #212121;
+    --amb-black: #242326;
+    --amb-light: #b7bce5;
+
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply bg-amb-blue text-amb-gray-dark font-bold py-2 px-4 border-b-4 border-amb-blue-mid rounded inline-flex items-center;
+}
+
+.btn:hover, .btn:active {
+    @apply bg-amb-blue-mid border-amb-blue-dark;
+}
+
+.icon {
+    @apply fill-current w-4 h-4 mr-2;
+}
